@@ -1,0 +1,93 @@
+body {
+    background-color: #ffffff;
+    color: #000;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+    font-family: "Roboto Condensed";
+}
+
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+main {
+    margin-top: 6%;
+    display: grid;
+    place-items: center;
+}
+
+#eyes,
+#eyes img {
+    position: absolute;
+    padding: 20px;
+    width: 15%;
+    transform: rotate(360deg);
+}
+
+#eyes img {
+    background-color: white;
+    clip-path: circle(30%);
+}
+
+#eyes #eye1 {
+    top: -21px;
+    left: 150px;
+    border-radius: 20%;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+}
+
+#eyes #eye2 {
+    top: -18.7px;
+    left: 70px;
+    border-radius: 20%;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+}
+
+#anchor {
+    margin-top: 10%;
+}
+
+.line-1 {
+    position: relative;
+    top: 50%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, .75);
+    font-size: 3rem;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter {
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+        blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 24em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
